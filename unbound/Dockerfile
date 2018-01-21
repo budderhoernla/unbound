@@ -1,6 +1,6 @@
 FROM arm32v7/debian:stable-slim
 
-MAINTAINER Stefan Falge <mail@stefan-falge.de>
+MAINTAINER SF <none@none.none>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
