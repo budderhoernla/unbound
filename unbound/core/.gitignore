@@ -1,3 +1,5 @@
+rootkey
+root.hints
 unbound_control.key
 unbound_control.pem
 unbound_server.key
