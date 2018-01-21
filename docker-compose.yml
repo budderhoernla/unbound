@@ -7,8 +7,8 @@ services:
         cap_drop:
             - NET_ADMIN
         ports:
-            - 192.168.178.74:8853:53/UDP
-            - 192.168.178.74:8853:53
+            - 192.168.178.74:53:53/UDP
+            - 192.168.178.74:53:53
         volumes:
             - ./unbound/core/:/etc/unbound/
         networks:
