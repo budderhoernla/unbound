@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    unbound:
+        restart: always
+        build: unbound
+        cap_drop:
+            - NET_ADMIN
+        ports:
+            - 192.168.178.74:53:53/UDP
+            - 192.168.178.74:53:53
+        volumes:
+            - ./unbound/core/:/etc/unbound
+        networks:
+            - dns-net
+
+networks:
+    dns-net:
+        driver: bridge
